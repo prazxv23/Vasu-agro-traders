@@ -1,130 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b2a">
-  <meta name="description" content="Vasu Agro Traders – agricultural sprayer sales, service, repair and spare parts in Pulianthoppu, Tamil Nadu.">
-  <title>Vasu Agro Traders | Service & Sales</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b3d2e">
+<meta name="description" content="Vasu Agro Traders – all-brand agricultural sprayer sales, repair, service and spare parts in Pulianthoppu, Tamil Nadu.">
+<title>Vasu Agro Traders | Sprayer Sales & Service</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="#home">
-    <span class="brand-mark">VA</span>
-    <span><strong>Vasu Agro Traders</strong><small>Service & Sales</small></span>
-  </a>
-  <button class="menu" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+<header class="nav">
+  <a class="logo" href="#home"><span>VA</span><b>Vasu Agro Traders<small>Service & Sales</small></b></a>
+  <button class="hamb" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
   <nav>
-    <a href="#products">Products</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="#products">Products</a><a href="#service">Service</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    <button class="lang" onclick="toggleLang()">தமிழ் / EN</button>
   </nav>
 </header>
 
 <main>
 <section id="home" class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">AGRICULTURAL MACHINERY • SALES • SERVICE</p>
-    <h1>Sprayers that work.<br><span>Service you can rely on.</span></h1>
-    <p class="lead">Sales, repair and service for agricultural sprayers across brands, with spare parts and selected farm machinery.</p>
-    <div class="actions">
-      <a class="btn primary" href="tel:+919865447732">Call 98654 47732</a>
-      <a class="btn whatsapp" href="https://wa.me/919865447732" target="_blank" rel="noopener">WhatsApp Us</a>
+  <div class="hero-text">
+    <div class="pill">🚜 AGRICULTURAL EQUIPMENT • SALES • SERVICE</div>
+    <h1 data-en="Agricultural Sprayer Sales & Service" data-ta="விவசாய ஸ்பிரேயர் விற்பனை & சர்வீஸ்">Agricultural Sprayer Sales & Service</h1>
+    <h2 data-en="All Brands. Expert Repair." data-ta="அனைத்து பிராண்டுகளும். சிறந்த பழுது நீக்கம்.">All Brands. Expert Repair.</h2>
+    <p data-en="Vasu Agro Traders provides sales, repair and service for agricultural sprayers across brands, with spare parts and selected farm machinery." data-ta="Vasu Agro Traders அனைத்து பிராண்டுகளின் விவசாய ஸ்பிரேயர்களுக்கான விற்பனை, பழுது நீக்கம் மற்றும் சர்வீஸ் சேவைகளை வழங்குகிறது. உதிரி பாகங்கள் மற்றும் தேர்ந்தெடுக்கப்பட்ட விவசாய இயந்திரங்களும் கிடைக்கும்.">Vasu Agro Traders provides sales, repair and service for agricultural sprayers across brands, with spare parts and selected farm machinery.</p>
+    <div class="buttons">
+      <a class="btn call" href="tel:+919865447732">📞 Call Now</a>
+      <a class="btn wa" href="https://wa.me/919865447732" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn map" href="https://share.google/UMZpXHQoS57ZVMKpH" target="_blank" rel="noopener">📍 Directions</a>
     </div>
-    <p class="location">📍 Plot No. 164, Gnanam Nagar, Pulianthoppu, Tamil Nadu – 613001</p>
+    <div class="address">Plot No. 164, Gnanam Nagar, Pulianthoppu, Tamil Nadu – 613001</div>
   </div>
-  <div class="hero-image">
-    <img src="sprayer-battery.jpg" alt="Agricultural battery sprayer">
-    <div class="badge"><b>ALL-BRAND</b><span>SPRAYER SERVICE</span></div>
+  <div class="hero-photo">
+    <img src="assets/battery-sprayer.jpg" alt="Agricultural battery sprayer">
+    <div class="floating"><strong>ALL BRANDS</strong><span>SALES • SERVICE • REPAIR</span></div>
   </div>
 </section>
 
-<section class="trust">
-  <div><b>All-brand service</b><span>Sprayer repair & maintenance</span></div>
-  <div><b>Sales & spare parts</b><span>Products and parts for farmers</span></div>
-  <div><b>Local support</b><span>Pulianthoppu, Tamil Nadu</span></div>
+<section class="quick">
+  <div><strong>All-brand sprayer service</strong><span>Repair & maintenance</span></div>
+  <div><strong>Sales & spare parts</strong><span>Ask about current availability</span></div>
+  <div><strong>Local shop support</strong><span>Pulianthoppu, Tamil Nadu</span></div>
 </section>
 
 <section id="products" class="section">
-  <div class="section-head">
-    <p class="eyebrow">WHAT WE SELL</p>
-    <h2>Agricultural equipment</h2>
-    <p>Product availability can vary. Contact us for current models, brands and prices.</p>
-  </div>
-  <div class="cards">
-    <article class="card">
-      <img src="sprayer-vstar.jpg" alt="V-Star agricultural power sprayer">
-      <div><h3>Battery & Knapsack Sprayers</h3><p>Battery-powered and knapsack sprayer options for agricultural use.</p></div>
-    </article>
-    <article class="card">
-      <img src="sprayer-neptune.jpg" alt="Petrol power sprayer">
-      <div><h3>Power Sprayers</h3><p>Petrol and motor-powered sprayers and related equipment.</p></div>
-    </article>
-    <article class="card">
-      <img src="machinery.jpg" alt="Agricultural machinery and brush cutter products">
-      <div><h3>Farm Machinery & Parts</h3><p>Brush cutters, weeders, earth auger equipment and selected spare parts.</p></div>
-    </article>
+  <div class="heading"><span>WHAT WE SELL</span><h2>Sprayers & farm equipment</h2><p>Models and stock can change. Call or WhatsApp us for current availability and prices.</p></div>
+  <div class="products">
+    <article><img src="assets/battery-sprayer.jpg" alt="Battery sprayer"><div><b>Battery Sprayers</b><p>Knapsack and battery-powered sprayers for agricultural use.</p></div></article>
+    <article><img src="assets/vstar-sprayer.jpg" alt="V-Star power sprayer"><div><b>Power Sprayers</b><p>Motor and petrol-powered sprayers and accessories.</p></div></article>
+    <article><img src="assets/neptune-sprayer.jpg" alt="Neptune power sprayer"><div><b>Knapsack & Motor Sprayers</b><p>Different types of agricultural sprayers across brands.</p></div></article>
+    <article><img src="assets/farm-machinery.jpg" alt="Agricultural machinery"><div><b>Farm Machinery & Parts</b><p>Brush cutters, weeders, earth auger equipment and spare parts.</p></div></article>
   </div>
 </section>
 
-<section id="services" class="section dark">
-  <div class="section-head">
-    <p class="eyebrow">OUR SERVICES</p>
-    <h2>Sales, repair & service</h2>
-    <p>Bring your agricultural sprayer to us for inspection, repair and service.</p>
-  </div>
-  <div class="service-grid">
-    <div class="service"><span>01</span><h3>Sprayer Repair</h3><p>Diagnosis and repair for agricultural sprayers from different brands.</p></div>
-    <div class="service"><span>02</span><h3>Maintenance</h3><p>Support for pumps, hoses, nozzles and other sprayer components.</p></div>
-    <div class="service"><span>03</span><h3>Spare Parts</h3><p>Selected replacement parts and accessories for agricultural equipment.</p></div>
-    <div class="service"><span>04</span><h3>Product Guidance</h3><p>Ask us about available sprayer models and equipment for your needs.</p></div>
+<section id="service" class="section green">
+  <div class="heading"><span>REPAIR & SUPPORT</span><h2>Sprayer service you can count on</h2><p>Bring your sprayer to us for inspection, repair and maintenance.</p></div>
+  <div class="services">
+    <div><i>01</i><h3>All-brand repair</h3><p>Service support for agricultural sprayers from different brands.</p></div>
+    <div><i>02</i><h3>Pump & pressure</h3><p>Help with common pump, pressure and spraying issues.</p></div>
+    <div><i>03</i><h3>Hose, nozzle & parts</h3><p>Selected replacement parts and accessories.</p></div>
+    <div><i>04</i><h3>Maintenance</h3><p>Practical support to keep your equipment ready for work.</p></div>
   </div>
 </section>
 
 <section id="gallery" class="section">
-  <div class="section-head">
-    <p class="eyebrow">FROM OUR SHOP</p>
-    <h2>Gallery</h2>
-  </div>
+  <div class="heading"><span>OUR SHOP</span><h2>Real photos from Vasu Agro Traders</h2></div>
   <div class="gallery">
-    <img src="assets/shop-1.jpg" alt="Vasu Agro Traders shop front">
+    <img src="assets/shop-1.jpg" alt="Vasu Agro Traders shop">
     <img src="assets/shop-2.jpg" alt="Vasu Agro Traders storefront">
-    <img src="sprayer-battery.jpg" alt="Battery sprayer">
-    <img src="sprayer-vstar.jpg" alt="V-Star power sprayer">
-    <img src="sprayer-neptune.jpg" alt="Neptune power sprayer">
-    <img src="machinery.jpg" alt="Agricultural machinery products">
+    <img src="assets/battery-sprayer.jpg" alt="Battery sprayer">
+    <img src="assets/vstar-sprayer.jpg" alt="V-Star sprayer">
+    <img src="assets/neptune-sprayer.jpg" alt="Neptune sprayer">
+    <img src="assets/farm-machinery.jpg" alt="Agricultural machinery">
   </div>
 </section>
 
 <section id="contact" class="contact">
-  <div>
-    <p class="eyebrow">VISIT OR CALL</p>
-    <h2>Need a sprayer or service?</h2>
-    <p>Call or WhatsApp us before visiting for current product availability and service enquiries.</p>
-    <div class="contact-actions">
-      <a class="btn primary" href="tel:+919865447732">📞 Call Now</a>
-      <a class="btn whatsapp" href="https://wa.me/919865447732" target="_blank" rel="noopener">💬 WhatsApp</a>
-      <a class="btn light" href="https://share.google/UMZpXHQoS57ZVMKpH" target="_blank" rel="noopener">📍 Get Directions</a>
-    </div>
+  <div><span>GET IN TOUCH</span><h2>Need a sprayer or repair?</h2><p>Call or WhatsApp before visiting to ask about products, service and current availability.</p>
+    <div class="buttons"><a class="btn call" href="tel:+919865447732">📞 98654 47732</a><a class="btn wa" href="https://wa.me/919865447732" target="_blank" rel="noopener">💬 WhatsApp</a></div>
   </div>
-  <div class="address">
-    <h3>Vasu Agro Traders</h3>
-    <p>Service and Sales</p>
-    <p>Plot No. 164, Gnanam Nagar,<br>Pulianthoppu, Tamil Nadu – 613001</p>
-    <a href="tel:+919865447732">98654 47732</a>
-  </div>
+  <div class="contact-card"><h3>Vasu Agro Traders</h3><p><b>Service & Sales</b></p><p>Plot No. 164, Gnanam Nagar,<br>Pulianthoppu, Tamil Nadu – 613001</p><a href="https://share.google/UMZpXHQoS57ZVMKpH" target="_blank" rel="noopener">📍 Open location in Google Maps →</a></div>
 </section>
 </main>
 
-<footer>
-  <span>© <span id="year"></span> Vasu Agro Traders – Service & Sales</span>
-  <span>Built for farmers & agricultural equipment needs.</span>
-</footer>
+<footer><b>Vasu Agro Traders – Service & Sales</b><span>© <span id="year"></span> All rights reserved.</span></footer>
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  document.querySelectorAll("nav a").forEach(a => a.addEventListener("click", () => document.body.classList.remove("nav-open")));
+let tamil=false;
+function toggleLang(){
+  tamil=!tamil;
+  document.querySelectorAll("[data-en]").forEach(el=>el.textContent=tamil?el.dataset.ta:el.dataset.en);
+}
+document.getElementById("year").textContent=new Date().getFullYear();
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.body.classList.remove("open")));
 </script>
 </body>
 </html>
